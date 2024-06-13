@@ -61,7 +61,7 @@
         <h2>Projects</h2>
         <ul>
             <li><a href="https://drive.google.com/file/d/1ytDEtBBcel5I1M3p96sMb981rjotLwd4/view?usp=drive_link">"Non-Bayesian updating and value of information,"</a> working paper</li>
-            <li><a href="https://drive.google.com/file/d/1OXGPn__uqqapc8_yqBjVj23mzemUr1dT/view?usp=drive_link">"Sophisticated reasoning, learning, and equilibrium in repeated games with imperfect feedback,"</a> joint with <a href="">Pierpaolo Battigalli</a>, accepted at <em>Economic Theory, special issue in honor of David K. Levine</em></li>
+            <li><a href="https://drive.google.com/file/d/1OXGPn__uqqapc8_yqBjVj23mzemUr1dT/view?usp=drive_link">"Sophisticated reasoning, learning, and equilibrium in repeated games with imperfect feedback,"</a> with <a href="https://didattica.unibocconi.it/mypage/index.php?IdUte=48808&cognome=BATTIGALLI&nome=PIERPAOLO&urlBackMy=/wps/wcm/connect/Bocconi/SitoPubblico_IT/Albero+di+navigazione/Home/docenti+e+ricerca/dipartimenti/Scienze+delle+Decisioni/Docenti/">Pierpaolo Battigalli</a>, accepted at <em>Economic Theory, special issue in honor of David K. Levine</em></li>
          
         </ul>
     </section>
