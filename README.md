@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -56,7 +55,7 @@
     </nav>
     <section id="about">
         <h2>About Me</h2>
-        <p>Write a brief description about yourself here.</p>
+        <p>I am a rising 5th year PhD student at Yale. I am interested in Economic Theory, particularly in Information, Behavioral, and Game Theory.</p>
     </section>
     <section id="projects">
         <h2>Projects</h2>
@@ -64,11 +63,9 @@
     </section>
     <section id="contact">
         <h2>Contact</h2>
-        <p>You can contact me at: your.email@example.com</p>
+        <p>You can contact me at: davide.bordoli@yale.edu</p>
     </section>
-    <footer>
-        &copy; 2024 Davide Bordoli
-    </footer>
+
 </body>
 </html>
 
