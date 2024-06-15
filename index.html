@@ -15,6 +15,7 @@
             color: #fff;
             padding: 20px;
             text-align: center;
+    position: relative;
         }
         nav {
             background-color: #444;
@@ -46,6 +47,7 @@
 </head>
 <body>
     <header>
+        <img src="IMG-20240615-WA0014.jpg" alt="Logo" class="logo">
         <h1>Davide Bordoli</h1>
     </header>
     <nav>
@@ -58,6 +60,14 @@
         ul {
             list-style-type: disc; /* This is the default bullet point style */
         }
+header .logo {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+    height: 30px; /* Adjust the height as needed */
+}
+        
         li {
             margin-bottom: 10px; /* Adjust this value to increase/decrease spacing */
         }
