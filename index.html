@@ -36,11 +36,9 @@
             width: 100%;
             height: auto;
         }
-        .sidebar h1, h2 {
+        .sidebar h1 {
             text-align: center;
             margin: 10px 0 0 0;
-            font-size: 1.5em; /* Smaller font size */
-            font-weight: 300; /* Lighter weight for elegance */
         }
         nav {
             background-color: #444;
@@ -97,44 +95,6 @@
             margin-left: 5px;
             margin-bottom: 20px;
         }
-         @media (max-width: 768px) {
-            .sidebar {
-                width: 100%;
-                height: auto;
-                position: relative;
-                flex-direction: row;
-            }
-            .sidebar header {
-                flex-direction: row;
-                align-items: center;
-            }
-            .sidebar .logo {
-                width: 50px;
-                height: auto;
-            }
-            .sidebar h1 {
-                font-size: 1em; /* Adjust font size for mobile */
-                margin: 0 10px;
-            }
-            nav {
-                flex-direction: row;
-                flex-grow: 1;
-            }
-            nav a {
-                padding: 10px 5px;
-                border-bottom: none; /* Remove border for header layout */
-                border-right: 1px solid #555; /* Add border between nav items */
-                flex-grow: 1;
-            }
-            .content {
-                margin-left: 0;
-                width: 100%;
-            }
-            footer {
-                width: 100%;
-                margin-left: 0;
-            }
-        }
     </style>
 </head>
 <body>
@@ -167,9 +127,6 @@
             <p>You can contact me at: <a href="mailto:davide.bordoli@yale.edu">davide.bordoli@yale.edu</a></p>
         </section>
     </div>
-    <footer>
-        <p>&copy; 2023 Davide Bordoli. All rights reserved.</p>
-    </footer>
 </body>
 </html>
 
