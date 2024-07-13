@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta name="description" content="Davide Bordoli's personal website. Learn more about his research in Economic Theory, Information, Behavioral, and Game Theory.">
+    <meta name="description" content="Davide Bordoli's personal website. Learn more about his research in Economic Theory, Information, Behavioral, and Game Theory.">
     <meta name="keywords" content="Davide Bordoli, Economic Theory, Information Theory, Behavioral Theory, Game Theory, Yale PhD">
     <title>Davide Bordoli</title>
     <style>
@@ -18,7 +18,7 @@
         .sidebar {
             background-color: #333;
             color: #fff;
-            width: 300px; /* Aumenta la larghezza a 300px */
+            width: 300px;
             display: flex;
             flex-direction: column;
             position: fixed;
@@ -27,42 +27,54 @@
             left: 0;
         }
         .sidebar header {
+            width: 100%;
+            height: 40vh; /* Adjust height as needed */
+            background-size: cover;
+            background-position: center;
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 0;
-            background-color: #333;
-            color: #fff;
+            justify-content: flex-end;
+            padding: 20px;
         }
         .sidebar .logo {
-            width: 100%;
-            height: auto;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-bottom: 10px;
         }
         .sidebar h1 {
             text-align: center;
-            margin: 10px 0 0 0;
+            margin: 10px 0;
+            font-size: 1.5em;
         }
         nav {
             background-color: #444;
             color: #fff;
-            padding: 10px;
+            padding: 10px 0;
             text-align: center;
             flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
         nav a {
             color: #fff;
             text-decoration: none;
             display: block;
             padding: 10px;
-            border-bottom: 1px solid #555; /* Aggiunge una linea sottile di divisione */
+            border-bottom: 1px solid #555;
+        }
+        nav a:last-child {
+            border-bottom: none;
         }
         nav a:hover {
             background-color: #555;
         }
         .content {
-            margin-left: 300px; /* Modifica anche il margine sinistro */
+            margin-left: 300px;
             padding: 20px;
-            width: calc(100% - 300px); /* Modifica la larghezza */
+            width: calc(100% - 300px);
         }
         footer {
             background-color: #333;
@@ -71,8 +83,8 @@
             padding: 10px;
             position: fixed;
             bottom: 0;
-            width: calc(100% - 300px); /* Modifica la larghezza */
-            margin-left: 300px; /* Modifica anche il margine sinistro */
+            width: calc(100% - 300px);
+            margin-left: 300px;
         }
         ul {
             list-style-type: disc;
@@ -97,7 +109,8 @@
             margin-left: 5px;
             margin-bottom: 20px;
         }
-        @media  (orientation: portrait) {
+
+        @media (orientation: portrait) {
             body {
                 flex-direction: column;
             }
@@ -105,31 +118,35 @@
                 width: 100%;
                 height: auto;
                 position: relative;
-                flex-direction: row;
+                flex-direction: column;
             }
             .sidebar header {
-                flex-direction: row;
+                height: 60vh; /* Adjust height as needed */
+                background-image: url('pic.jpg'); /* Replace with your image */
+                background-size: cover;
+                background-position: center;
+                display: flex;
+                flex-direction: column;
                 align-items: center;
-                padding: 10px;
-            }
-            .sidebar .logo {
-                width: 50px;
-                height: auto;
+                justify-content: center;
+                padding: 20px;
             }
             .sidebar h1 {
-                font-size: 1em;
-                margin: 0 10px;
+                margin: 10px 0 20px 0;
+                font-size: 1.5em;
             }
             nav {
-                flex-direction: row;
                 flex-grow: 1;
-                display: flex;
+                width: 100%;
+                padding: 0;
             }
             nav a {
-                padding: 10px 5px;
+                padding: 15px 20px;
                 border-bottom: none;
-                border-right: 1px solid #555;
-                flex-grow: 1;
+                border-right: none;
+            }
+            nav a:last-child {
+                border-bottom: 1px solid #555;
             }
             .content {
                 margin-left: 0;
@@ -142,10 +159,18 @@
         }
     </style>
 </head>
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JYLBX93HG3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JYLBX93HG3');
 <body>
     <div class="sidebar">
         <header>
-            <img src="pic.jpg" alt="Logo" class="logo">
+            <div class="logo" style="background-image: url('pic.jpg');"></div>
             <h1>Davide Bordoli</h1>
         </header>
         <nav>
@@ -174,4 +199,3 @@
     </div>
 </body>
 </html>
-
