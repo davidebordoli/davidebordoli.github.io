@@ -43,7 +43,10 @@
         }
         .sidebar h1 {
             text-align: center;
-            margin: 10px 0 0 0;
+            margin: 10px 0 10px 0; /* Adjusted margin to add space below the title */
+            font-size: 24px; /* Adjusted font size */
+            font-weight: 500; /* Changed font weight to normal */
+            font-family: 'Poppins', sans-serif; /* Optionally use a different font */
         }
         nav {
             background-color: #444;
@@ -104,7 +107,14 @@
             margin-left: 5px;
             margin-bottom: 20px;
         }
-        @media (max-width: 768px) {
+         h2 {
+            font-family: 'Poppins', sans-serif; /* Change 'YourFontFamily' to the font you want */
+            font-size: 20px; /* Adjust the font size as needed */
+            font-weight: 500; /* Change the font weight to normal */
+            color: #333; /* Change the color as needed */
+            margin-bottom: 15px; /* Add some margin below the title */
+        }
+        @media (orientation: portrait) {
             body {
                 flex-direction: column;
             }
@@ -125,8 +135,11 @@
                 margin: 10px 0;
             }
             .sidebar h1 {
-                margin: 0;
-                padding: 10px;
+               text-align: center;
+            margin: 10px 0 10px 0; /* Adjusted margin to add space below the title */
+            font-size: 24px; /* Adjusted font size */
+            font-weight: 500; /* Changed font weight to normal */
+            font-family: 'Poppins', sans-serif; /* Optionally use a different font */
             }
             nav {
                 display: flex;
@@ -155,6 +168,13 @@
                 margin-left: 0;
                 box-sizing: border-box; /* Assicura che padding non causi trabocco */
             }
+             h2 {
+            font-family: 'Poppins', sans-serif; /* Change 'YourFontFamily' to the font you want */
+            font-size: 20px; /* Adjust the font size as needed */
+            font-weight: 500; /* Change the font weight to normal */
+            color: #333; /* Change the color as needed */
+            margin-bottom: 15px; /* Add some margin below the title */
+        }
         }
     </style>
 </head>
