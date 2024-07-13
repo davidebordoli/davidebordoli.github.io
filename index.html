@@ -97,6 +97,49 @@
             margin-left: 5px;
             margin-bottom: 20px;
         }
+        @media  (orientation: portrait) {
+            body {
+                flex-direction: column;
+            }
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+                flex-direction: row;
+            }
+            .sidebar header {
+                flex-direction: row;
+                align-items: center;
+                padding: 10px;
+            }
+            .sidebar .logo {
+                width: 50px;
+                height: auto;
+            }
+            .sidebar h1 {
+                font-size: 1em;
+                margin: 0 10px;
+            }
+            nav {
+                flex-direction: row;
+                flex-grow: 1;
+                display: flex;
+            }
+            nav a {
+                padding: 10px 5px;
+                border-bottom: none;
+                border-right: 1px solid #555;
+                flex-grow: 1;
+            }
+            .content {
+                margin-left: 0;
+                width: 100%;
+            }
+            footer {
+                width: 100%;
+                margin-left: 0;
+            }
+        }
     </style>
 </head>
 <body>
