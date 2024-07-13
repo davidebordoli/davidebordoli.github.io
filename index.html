@@ -84,6 +84,51 @@ header h1 {
             margin-left: 5px; /* Ensures no additional indentation */
             margin-bottom: 20px;
         }
+
+         @media (orientation: landscape) {
+        body {
+            display: flex;
+        }
+        header {
+            flex: 0 0 200px; /* Width of the sidebar header */
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Full height of the viewport */
+            padding: 20px;
+        }
+        header .logo {
+            max-width: 100%; /* Adjust the logo size */
+            margin-bottom: 20px;
+        }
+        header h1 {
+            text-align: center;
+            margin: 0;
+        }
+        nav {
+            flex: 1; /* Take remaining space */
+            display: flex;
+            flex-direction: column;
+            background-color: #444;
+            color: #fff;
+            padding: 10px;
+            overflow-y: auto; /* Enable scrolling for nav content */
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        section {
+            flex: 2; /* Take double space compared to nav */
+            padding: 20px;
+            overflow-y: auto; /* Enable scrolling for section content */
+        }
+    }
     </style>
 </head>
     <!-- Google tag (gtag.js) -->
