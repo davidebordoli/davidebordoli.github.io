@@ -27,6 +27,17 @@
             font-size: 14px;
              line-height: 1.5;
             text-align: justify;
+            display: none; /* Initially hide the article details */
+              border: 1px solid #ccc;
+            background-color: #fff;
+            position: absolute;
+            z-index: 1;
+            max-width: 300px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        }
+         .popup-link {
+            cursor: pointer;
+            text-decoration: underline;
         }
         body {
             font-family: Poppins, sans-serif;
@@ -241,13 +252,15 @@
             <ul class="no-style">
                 <li class="no-indent">
                     <p class="article-title"><a href="https://drive.google.com/file/d/1aMN-yZZDJl39w677v2LBBgEbUp8YVEbX/view?usp=sharing" target="_blank">Non-Bayesian updating and value of information</a></p> 
-                 <p class="article-abstract">We study how non-Bayesian updating affects the evaluation of information under expected utility maximization, and whether Blackwell informativeness remains a desirable feature. We propose two measures of value: a prospective view, based on anticipatory utility, and a consequentialist view, based on realized utility. We show that, under the prospective view, information can have non-instrumental value. Its absence characterizes value-optimality of fully learning the state, which in turn is equivalent to desirability of Blackwell informativeness. Under both views, overreaction appears incompatible with robust desirability of informativeness, while underreaction accommodates it.</p> 
-                      </li>
+                 <p class="article-abstract" id="abstract1">We study how non-Bayesian updating affects the evaluation of information under expected utility maximization, and whether Blackwell informativeness remains a desirable feature. We propose two measures of value: a prospective view, based on anticipatory utility, and a consequentialist view, based on realized utility. We show that, under the prospective view, information can have non-instrumental value. Its absence characterizes value-optimality of fully learning the state, which in turn is equivalent to desirability of Blackwell informativeness. Under both views, overreaction appears incompatible with robust desirability of informativeness, while underreaction accommodates it.</p> 
+                   <p class="popup-link" onclick="togglePopup('abstract1')">Abstract[+]</p>  
+                </li>
                 <li class="no-indent">
                   <p class="article-title"><a href="https://link.springer.com/content/pdf/10.1007/s00199-024-01588-3.pdf" target="_blank">Sophisticated reasoning, learning, and equilibrium in repeated games with imperfect feedback</a></p>
                    <p class="article-details">with <a href="https://didattica.unibocconi.it/mypage/index.php?IdUte=48808&cognome=BATTIGALLI&nome=PIERPAOLO&urlBackMy=/wps/wcm/connect/Bocconi/SitoPubblico_IT/Albero+di+navigazione/Home/docenti+e+ricerca/dipartimenti/Scienze+delle+Decisioni/Docenti/" target="_blank" class="link-coauthor">Pierpaolo Battigalli</a></p>
                     <p class="article-details"><em>Economic Theory</em>, 2024</p>
-                    <p class="article-abstract">We analyze the infinite repetition with imperfect feedback of a simultaneous or sequential game, assuming that players are strategically sophisticated—but impatient—expected-utility maximizers. Sophisticated strategic reasoning in the repeated game is combined with belief updating to provide a foundation for a refinement of self-confirming equilibrium. In particular, we model strategic sophistication as rationality and common strong belief in rationality. Then, we combine belief updating and sophisticated reasoning to provide sufficient conditions for a kind of learning—that is, the ability, in the limit, to exactly forecast the sequence of future observations—thus showing that impatient agents end up playing a sequence of self-confirming equilibria in strongly rationalizable conjectures of the one-period game.</p>
+                    <p class="article-abstract" id="abstract2">We analyze the infinite repetition with imperfect feedback of a simultaneous or sequential game, assuming that players are strategically sophisticated—but impatient—expected-utility maximizers. Sophisticated strategic reasoning in the repeated game is combined with belief updating to provide a foundation for a refinement of self-confirming equilibrium. In particular, we model strategic sophistication as rationality and common strong belief in rationality. Then, we combine belief updating and sophisticated reasoning to provide sufficient conditions for a kind of learning—that is, the ability, in the limit, to exactly forecast the sequence of future observations—thus showing that impatient agents end up playing a sequence of self-confirming equilibria in strongly rationalizable conjectures of the one-period game.</p>
+                      <p class="popup-link" onclick="togglePopup('abstract2')">Abstract[+]</p>               
                 </li>
       </ul>
         </section>
