@@ -330,6 +330,85 @@ function toggleAbstract(button) {
     button.textContent = isVisible ? "Show Abstract" : "Hide Abstract";
 }
 </script>
+
+<script>
+/**
+ * 1) Outbound & document link clicks (CVs, working papers, etc.)
+ */
+document.addEventListener('click', function (e) {
+  const a = e.target.closest('a');
+  if (!a) return;
+
+  const href = a.href || '';
+  const text = (a.textContent || '').trim();
+  const isOutbound = a.host && a.host !== location.host;
+  const isMailto = href.startsWith('mailto:');
+
+  if (isMailto) {
+    gtag('event', 'email_click', {
+      link_url: href,
+      link_text: text,
+      link_location: location.pathname
+    });
+    return;
+  }
+
+  const isCV = /cv/i.test(text) || /cv/i.test(href);
+  if (isCV) {
+    gtag('event', 'cv_click', {
+      link_url: href,
+      link_text: text,
+      link_location: location.pathname
+    });
+    return;
+  }
+
+  if (isOutbound) {
+    gtag('event', 'outbound_link_click', {
+      link_url: href,
+      link_text: text,
+      link_location: location.pathname
+    });
+  } else {
+    gtag('event', 'internal_link_click', {
+      link_url: href,
+      link_text: text,
+      link_location: location.pathname
+    });
+  }
+});
+
+/**
+ * 2) Abstract toggles
+ */
+(function wrapToggle() {
+  const originalToggle = window.toggleAbstract;
+
+  window.toggleAbstract = function(button) {
+    const abstract = button.nextElementSibling;
+    const willShow = abstract.style.display !== 'block';
+
+    originalToggle(button);
+
+    let paperTitle = '(unknown)';
+    const li = button.closest('li');
+    if (li) {
+      const titleNode = li.querySelector('.article-title');
+      if (titleNode) paperTitle = (titleNode.textContent || '').trim();
+    }
+
+    gtag('event', 'abstract_toggle', {
+      paper_title: paperTitle,
+      state: willShow ? 'show' : 'hide',
+      section: 'working_papers',
+      page: location.pathname
+    });
+  };
+})();
+</script>
+
+
+    
 </body>
 </html>
 
